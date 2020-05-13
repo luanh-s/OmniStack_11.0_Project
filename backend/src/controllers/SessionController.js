@@ -8,12 +8,13 @@ module.exports = {
     // },
 
     async create(request, response) {
-        const { id } = request.body;
+        const { email, password } = request.body;
+        // const { id } = request.body;
 
-        const ong = await connection('ongs').where('id', id).select('name').first();
+        const ong = await connection('ongs').where('email', email).where('password', password).select('name','id').first();
 
         if (!ong) {
-            return response.status(400).json({error: 'No ONG found with this ID'});
+            return response.status(400).json({error: 'No ONG found with this Login'});
         }
 
         return response.json(ong);

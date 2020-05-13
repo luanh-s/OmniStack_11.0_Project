@@ -16,9 +16,14 @@
 
             form{
                 margin-top: 100px;
+
                 h1{
                     font-size: 32px;
                     margin-bottom: 32px;
+                }
+
+                input + input {
+                    margin-top: 8px
                 }
             }
         }
