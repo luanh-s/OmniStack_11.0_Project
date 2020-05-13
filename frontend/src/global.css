@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
+
+* {
+    font: 400 14px Jost, sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+}
+
+body {
+    font: 400 14px Jost, sans-serif;
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialized;
+}
+
+input, button, textarea { 
+    font: 400 18px Jost, sans-serif;
+}
+
+button { 
+    cursor: pointer;
+}
+
+.backlink {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 40px;
+    color: #41414d;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+.backlink:hover {
+    opacity: 0.8;
+}
+.backlink svg {
+    margin-right: 8px;
+}
