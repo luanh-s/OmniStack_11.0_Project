@@ -22,8 +22,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.LHSDevelopment.OmniStackProj"
     },
-    "sdkVersion": "37.0.0"
+    "android": {
+      "package": "com.LHSDevelopment.OmniStackProj"
+    }
   }
 }
